@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class Form2 : Form
+    public partial class VentanaContactarProveedor : Form
     {
-        public Form2()
+        public VentanaContactarProveedor()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-            Form3 myForm3 = new Form3();
-            myForm3.Show();
         }
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class Form3 : Form
+    public partial class VentanaAltaCliente : Form
     {
-        public Form3()
+        public VentanaAltaCliente()
         {
             InitializeComponent();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-           
         }
     }
 }

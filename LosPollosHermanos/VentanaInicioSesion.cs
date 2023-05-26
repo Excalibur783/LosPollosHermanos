@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class Form1 : Form
+    public partial class VentanaInicioSesion : Form
     {
-        public Form1()
+        public VentanaInicioSesion()
         {
             InitializeComponent();
             this.MinimumSize = this.MaximumSize = this.Size;
@@ -22,7 +22,7 @@ namespace LosPollosHermanos
         {
             //this.SetVisibleCore(false);
 
-            Form2 miForm2 = new Form2();
+            VentanaMenu miForm2 = new VentanaMenu();
             miForm2.Show();
         }
     }
