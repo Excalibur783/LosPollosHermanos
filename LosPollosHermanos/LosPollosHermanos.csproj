@@ -46,52 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VentanaInicioSesion.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaInicioSesion.Designer.cs">
-      <DependentUpon>VentanaInicioSesion.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentanaMenu.cs">
+    <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaMenu.Designer.cs">
-      <DependentUpon>VentanaMenu.cs</DependentUpon>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentanaAltaEmpleado.cs">
+    <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaAltaEmpleado.Designer.cs">
-      <DependentUpon>VentanaAltaEmpleado.cs</DependentUpon>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentanaAltaCliente.cs">
+    <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaAltaCliente.Designer.cs">
-      <DependentUpon>VentanaAltaCliente.cs</DependentUpon>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentanaContactarProveedor.cs">
+    <Compile Include="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaContactarProveedor.Designer.cs">
-      <DependentUpon>VentanaContactarProveedor.cs</DependentUpon>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VentanaInicioSesion.resx">
-      <DependentUpon>VentanaInicioSesion.cs</DependentUpon>
+    <Compile Include="VentanaRealizarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaRealizarVenta.Designer.cs">
+      <DependentUpon>VentanaRealizarVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaMenu.resx">
-      <DependentUpon>VentanaMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaAltaEmpleado.resx">
-      <DependentUpon>VentanaAltaEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaAltaCliente.resx">
-      <DependentUpon>VentanaAltaCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaContactarProveedor.resx">
-      <DependentUpon>VentanaContactarProveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VentanaRealizarVenta.resx">
+      <DependentUpon>VentanaRealizarVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

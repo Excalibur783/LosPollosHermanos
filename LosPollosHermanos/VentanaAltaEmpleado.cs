@@ -24,5 +24,13 @@ namespace LosPollosHermanos
             VentanaMenu f2 = new VentanaMenu();
             f2.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaRealizarVenta ventanaRealizarVenta = new VentanaRealizarVenta();
+            ventanaRealizarVenta.Show();
+        }
     }
 }
