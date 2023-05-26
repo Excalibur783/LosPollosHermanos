@@ -24,5 +24,13 @@ namespace LosPollosHermanos
             Form3 myForm3 = new Form3();
             myForm3.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaRealizarVenta ventanaRealizarVenta = new VentanaRealizarVenta();
+            ventanaRealizarVenta.Show();
+        }
     }
 }
