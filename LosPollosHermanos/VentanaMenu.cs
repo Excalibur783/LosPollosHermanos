@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class Form2 : Form
+    public partial class VentanaMenu : Form
     {
-        public Form2()
+        public VentanaMenu()
         {
             InitializeComponent();
         }
@@ -21,16 +21,16 @@ namespace LosPollosHermanos
         {
             this.Close();
 
-            Form3 myForm3 = new Form3();
+            VentanaAltaEmpleado myForm3 = new VentanaAltaEmpleado();
             myForm3.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
 
-            VentanaRealizarVenta ventanaRealizarVenta = new VentanaRealizarVenta();
-            ventanaRealizarVenta.Show();
+            VentanaContactarProveedor myForm5 = new VentanaContactarProveedor();
+            myForm5.Show();
         }
     }
 }

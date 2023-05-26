@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class Form4 : Form
+    public partial class VentanaContactarProveedor : Form
     {
-        public Form4()
+        public VentanaContactarProveedor()
         {
             InitializeComponent();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

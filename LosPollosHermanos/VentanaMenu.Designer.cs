@@ -1,6 +1,6 @@
 ﻿namespace LosPollosHermanos
 {
-    partial class Form2
+    partial class VentanaMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -76,6 +76,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "CONTACTAR PROVEEDOR";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -143,6 +144,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
