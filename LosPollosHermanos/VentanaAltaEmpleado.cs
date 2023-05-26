@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class Form3 : Form
+    public partial class VentanaAltaEmpleado : Form
     {
-        public Form3()
+        public VentanaAltaEmpleado()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace LosPollosHermanos
         {
            this.Close();
 
-            Form2 f2 = new Form2();
+            VentanaMenu f2 = new VentanaMenu();
             f2.Show();
         }
     }

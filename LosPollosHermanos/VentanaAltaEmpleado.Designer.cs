@@ -1,6 +1,6 @@
 ﻿namespace LosPollosHermanos
 {
-    partial class Form3
+    partial class VentanaAltaEmpleado
     {
         /// <summary>
         /// Required designer variable.
