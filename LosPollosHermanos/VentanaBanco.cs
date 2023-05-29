@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
-    public partial class VentanaContactarProveedor : Form
+    public partial class VentanaBanco : Form
     {
-        public VentanaContactarProveedor()
+        public VentanaBanco()
         {
             InitializeComponent();
         }
 
-
+        private void load(object sender, EventArgs e)
+        {
+            Dueño gustavo = new Dueño();
+            label1.Text = gustavo.consultarBanco();
+        }
     }
 }

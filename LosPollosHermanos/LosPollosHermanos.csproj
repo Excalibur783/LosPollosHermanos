@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Dueño.cs" />
+    <Compile Include="Empleado.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="VentanaBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaBanco.Designer.cs">
+      <DependentUpon>VentanaBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +94,11 @@
     <Compile Include="VentanaRealizarVenta.Designer.cs">
       <DependentUpon>VentanaRealizarVenta.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="VentanaBanco.resx">
+      <DependentUpon>VentanaBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaInicioSesion.resx">
+      <DependentUpon>VentanaInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VentanaMenu.resx">
       <DependentUpon>VentanaMenu.cs</DependentUpon>
@@ -111,6 +124,7 @@
     <EmbeddedResource Include="VentanaRealizarVenta.resx">
       <DependentUpon>VentanaRealizarVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
