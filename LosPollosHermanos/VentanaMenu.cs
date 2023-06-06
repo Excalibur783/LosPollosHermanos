@@ -48,5 +48,13 @@ namespace LosPollosHermanos
             VentanaBanco banco = new VentanaBanco();
             banco.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaRealizarVenta rv = new VentanaRealizarVenta();
+            rv.Show();
+        }
     }
 }

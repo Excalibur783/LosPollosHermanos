@@ -20,9 +20,11 @@ namespace LosPollosHermanos
         private void btnVender_Click(object sender, EventArgs e)
         {
             int cantidad = (int) nudCantidad.Value;
-            int precio = cantidad * 25;
+            int precio = cantidad * 20000;
             lblPrecio.Text += precio.ToString() + '€';
             lblPrecio.Visible = true;
+
+            Program.gustavo.realizarVenta(txtIdCliente.Text, cantidad);
         }
     }
 }

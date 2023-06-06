@@ -50,10 +50,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 362);
+            this.label1.Location = new System.Drawing.Point(160, 347);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 33);
+            this.label1.Size = new System.Drawing.Size(96, 33);
             this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
             // 
             // label2
             // 
@@ -61,7 +62,7 @@
             this.label2.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(188, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(341, 40);
+            this.label2.Size = new System.Drawing.Size(331, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "CUENTA BANCARIA";
             // 
@@ -69,7 +70,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 212);
+            this.label3.Location = new System.Drawing.Point(160, 212);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(389, 33);
             this.label3.TabIndex = 3;
@@ -79,7 +80,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(109, 245);
+            this.label4.Location = new System.Drawing.Point(160, 245);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(361, 33);
             this.label4.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 545);
+            this.ClientSize = new System.Drawing.Size(731, 419);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

@@ -2,69 +2,84 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace LosPollosHermanos
 {
     public class Dueño
     {
-        public string nombre_usuario
+        private string nombre_usuario;
+
+        private string password;
+
+        private int dinero;
+
+        private int stock;
+
+        public Dueño() 
         {
-            get => default;
-            set
-            {
-            }
+            nombre_usuario = "GustavoFring";
+            password = "password";
+            dinero = 100000;
+            stock = 0;
         }
 
-        public string password
+        public string getNombre_usuario() { return nombre_usuario; }
+        public string getPassword() { return password;}
+        public int getDinero() {  return dinero;}
+        public int getStock() {  return stock;}
+
+        public void setNombre_usuario(string nombre_usuario)
         {
-            get => default;
-            set
-            {
-            }
+            this.nombre_usuario = nombre_usuario;
+        }
+        public void setPassword(string password) 
+        {  
+            this.password = password;
+        } 
+        public void setDinero(int dinero)
+        {
+            this.dinero = dinero;
+        }
+        public void setStock(int stock)
+        {
+            this.stock = stock;
         }
 
-        public int dinero
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
-        public int stock
-        {
-            get => default;
-            set
-            {
-            }
-        }
 
         public void realizarPedido(int cantidad)
         {
             int precio_kilo = 15000;
 
-            if (cantidad <= stock)
+            if (getDinero() >= cantidad * precio_kilo)
             {
-                stock += cantidad;
-                dinero -= (precio_kilo * cantidad);
+                setStock(getStock() + cantidad);
+                setDinero(getDinero() - (precio_kilo * cantidad));
+                MessageBox.Show("PEDIDO REALIZADO");
             }
+            else
+                MessageBox.Show("SALDO INSUFICIENTE");
         }
 
         public void realizarVenta(string id_cliente, int cantidad)
         {
             int precio_venta = 20000;
 
-            if (cantidad <= stock)
+            if (cantidad <= getStock())
             {
-                stock -= cantidad;
-                dinero += (precio_venta * cantidad);
+                setStock(getStock() - cantidad);
+                setDinero(getDinero() + (precio_venta * cantidad));
+                MessageBox.Show("VENTA REALIZADA");
             }
+            else
+                MessageBox.Show("NO HAY SUFICIENTE STOCK. EL STOCK ACTUAL ES: "+getStock());
             
         }
 
         public string consultarBanco()
         {
-            return "El saldo disponible en su cuenta es de " + dinero;
+            return "SALDO DISPONIBLE: " + getDinero() +"$";
         }
     }
 }

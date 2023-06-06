@@ -12,11 +12,16 @@ namespace LosPollosHermanos
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
+
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new VentanaInicioSesion());
+
+            
         }
+
+        public static Dueño gustavo = new Dueño();
     }
 }

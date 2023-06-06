@@ -19,8 +19,7 @@ namespace LosPollosHermanos
 
         private void load(object sender, EventArgs e)
         {
-            Dueño gustavo = new Dueño();
-            label1.Text = gustavo.consultarBanco();
+            label1.Text = Program.gustavo.consultarBanco();
         }
     }
 }

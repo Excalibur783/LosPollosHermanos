@@ -16,6 +16,7 @@ namespace LosPollosHermanos
         {
             InitializeComponent();
             this.MinimumSize = this.MaximumSize = this.Size;
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,7 +24,15 @@ namespace LosPollosHermanos
             //this.SetVisibleCore(false);
 
             VentanaMenu miForm2 = new VentanaMenu();
-            miForm2.Show();
+            String username = Program.gustavo.getNombre_usuario();
+            String password = Program.gustavo.getPassword();
+            if (textBox1.Text.Equals(username) && textBox2.Text.Equals(password))
+            {
+                miForm2.Show();
+            }
+            else
+                MessageBox.Show("NOMBRE DE USUARIO O CONTRASEÑA INCORRECTOS");
+            
         }
     }
 }

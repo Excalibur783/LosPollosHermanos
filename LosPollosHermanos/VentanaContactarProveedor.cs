@@ -17,6 +17,9 @@ namespace LosPollosHermanos
             InitializeComponent();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.gustavo.realizarPedido((int)numericUpDown1.Value);
+        }
     }
 }
