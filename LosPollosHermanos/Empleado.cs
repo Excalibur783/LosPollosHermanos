@@ -15,7 +15,7 @@ namespace LosPollosHermanos
         {
             //Gestionando creacion de objetos tipo empleado, para acceso inicio sesion.
             setNumTelefono(numTelefono);
-            setCorreoElectronico(correoElectronico);
+            setCorreoElectronico(correo);
         }
 
         public void setNumTelefono(int numTelefono)
