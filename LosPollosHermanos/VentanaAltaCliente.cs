@@ -16,5 +16,22 @@ namespace LosPollosHermanos
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int idCliente = int.Parse(txtIdCliente.Text);
+            String nombre = txtNombre.Text;
+            String apellidos = txtApellidos.Text;
+
+            Program.clientes.Add(new Cliente(idCliente, nombre, apellidos));
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaMenu f2 = new VentanaMenu();
+            f2.Show();
+        }
     }
 }

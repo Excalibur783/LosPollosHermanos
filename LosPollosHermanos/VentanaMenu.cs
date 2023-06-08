@@ -56,5 +56,13 @@ namespace LosPollosHermanos
             VentanaRealizarVenta rv = new VentanaRealizarVenta();
             rv.Show();
         }
+
+        private void btnActualizarEmpleado_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaActualizarEmpleado ventanaActualizarEmpleado = new VentanaActualizarEmpleado();
+            ventanaActualizarEmpleado.Show();
+        }
     }
 }
