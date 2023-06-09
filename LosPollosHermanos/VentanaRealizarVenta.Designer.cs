@@ -37,6 +37,7 @@
             this.lblCantidad = new System.Windows.Forms.Label();
             this.nudCantidad = new System.Windows.Forms.NumericUpDown();
             this.lblPrecio = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,12 +137,27 @@
             this.lblPrecio.Text = "Precio: ";
             this.lblPrecio.Visible = false;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
+            this.button6.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Honeydew;
+            this.button6.Location = new System.Drawing.Point(472, 421);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(130, 37);
+            this.button6.TabIndex = 36;
+            this.button6.Text = "ATRÁS";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // VentanaRealizarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(237)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(756, 554);
+            this.ClientSize = new System.Drawing.Size(613, 469);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.nudCantidad);
             this.Controls.Add(this.lblCantidad);
@@ -171,5 +187,6 @@
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.NumericUpDown nudCantidad;
         private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Button button6;
     }
 }

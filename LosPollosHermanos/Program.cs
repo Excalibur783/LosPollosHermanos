@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,10 @@ namespace LosPollosHermanos
 {
     internal static class Program
     {
+        public static Dueño gustavo = new Dueño();
+        public static ArrayList empleados = new ArrayList();
+        public static ArrayList clientes = new ArrayList();
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -18,10 +23,6 @@ namespace LosPollosHermanos
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new VentanaInicioSesion());
-
-            
         }
-
-        public static Dueño gustavo = new Dueño();
     }
 }

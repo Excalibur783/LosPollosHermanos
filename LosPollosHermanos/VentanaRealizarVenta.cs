@@ -26,5 +26,13 @@ namespace LosPollosHermanos
 
             Program.gustavo.realizarVenta(txtIdCliente.Text, cantidad);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaMenu f2 = new VentanaMenu();
+            f2.Show();
+        }
     }
 }
