@@ -21,5 +21,13 @@ namespace LosPollosHermanos
         {
             label1.Text = Program.gustavo.consultarBanco();
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            VentanaMenu ventanaMenu = new VentanaMenu();
+            ventanaMenu.Show();
+        }
     }
 }

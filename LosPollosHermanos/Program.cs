@@ -13,6 +13,8 @@ namespace LosPollosHermanos
         public static ArrayList empleados = new ArrayList();
         public static ArrayList clientes = new ArrayList();
 
+        public static VentanaInicioSesion ventanaInicioSesion;
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -22,7 +24,7 @@ namespace LosPollosHermanos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentanaInicioSesion());
+            Application.Run(ventanaInicioSesion = new VentanaInicioSesion());
         }
     }
 }

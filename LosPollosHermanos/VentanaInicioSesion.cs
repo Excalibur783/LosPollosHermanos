@@ -21,14 +21,18 @@ namespace LosPollosHermanos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.SetVisibleCore(false);
-
             VentanaMenu miForm2 = new VentanaMenu();
             String username = Program.gustavo.getNombre_usuario();
             String password = Program.gustavo.getPassword();
             if (textBox1.Text.Equals(username) && textBox2.Text.Equals(password))
             {
                 miForm2.Show();
+                ConexionBaseDatos conexion = new ConexionBaseDatos();
+                conexion.Conectar();
+                conexion.cargarDatos();
+                this.Hide();
+                textBox1.Text = String.Empty;
+                textBox2.Text = String.Empty;
             }
             else
                 MessageBox.Show("NOMBRE DE USUARIO O CONTRASEÑA INCORRECTOS");

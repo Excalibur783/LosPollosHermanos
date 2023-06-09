@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace LosPollosHermanos
 {
@@ -41,14 +42,16 @@ namespace LosPollosHermanos
             int telefono = int.Parse(txtTelefono.Text);
             String correo = txtCorreo.Text;
 
-            Program.empleados.Add(new Empleado(idEmpleado, nombre, apellidos, telefono, correo));
-            MessageBox.Show("SE HA GUARDADO EL EMPLEADO CORRECTAMENTE");
-
             txtIdEmpleado.Text = String.Empty;
             txtNombre.Text = String.Empty;
             txtApellidos.Text = String.Empty;
             txtTelefono.Text = String.Empty;
             txtCorreo.Text = String.Empty;
+
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            conexion.Conectar();
+            conexion.altaEmpleado(idEmpleado, nombre, apellidos, telefono, correo);
+            conexion.Desconectar();
         }
     }
 }

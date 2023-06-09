@@ -21,7 +21,7 @@ namespace LosPollosHermanos
         {
             int cantidad = (int) nudCantidad.Value;
             int precio = cantidad * 20000;
-            lblPrecio.Text += precio.ToString() + '€';
+            lblPrecio.Text = "Precio: " + precio.ToString() + '€';
             lblPrecio.Visible = true;
 
             Program.gustavo.realizarVenta(txtIdCliente.Text, cantidad);

@@ -12,7 +12,7 @@ namespace LosPollosHermanos
 {
     public partial class VentanaActualizarEmpleado : Form
     {
-        Empleado empleadoSeleccionado;
+        private Empleado empleadoSeleccionado;
 
         public VentanaActualizarEmpleado()
         {
@@ -41,21 +41,21 @@ namespace LosPollosHermanos
             foreach (Empleado empleado in Program.empleados)
                 if (empleado == empleadoSeleccionado)
                 {
-                    empleado.setNombre(txtNombre.Text);
-                    empleado.setApellido(txtApellidos.Text);
-                    empleado.setNumTelefono(int.Parse(txtTelefono.Text));
-                    empleado.setCorreoElectronico(txtCorreo.Text);
+                    ConexionBaseDatos conexion = new ConexionBaseDatos();
+                    conexion.Conectar();
+                    conexion.actualizarEmpleado(empleado.getId(), txtNombre.Text, txtApellidos.Text, int.Parse(txtTelefono.Text), txtCorreo.Text);
+                    conexion.Desconectar();
+
                     MessageBox.Show("SE HA MODIFICADO EL SOCIO CORRECTAMENTE");
                 }
         }
 
         private void cmbIdEmpleado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String IdEmpleadoSeleccionado = cmbIdEmpleado.SelectedItem.ToString();
-
+            String idEmpleadoSeleccionado = cmbIdEmpleado.SelectedItem.ToString();
 
             foreach (Empleado empleado in Program.empleados)
-                if (empleado.getId() == int.Parse(IdEmpleadoSeleccionado))
+                if (empleado.getId() == int.Parse(idEmpleadoSeleccionado))
                 {
                     empleadoSeleccionado = empleado;
                     txtNombre.Text = empleadoSeleccionado.getNombre();
@@ -74,6 +74,13 @@ namespace LosPollosHermanos
             txtApellidos.Text = String.Empty;
             txtTelefono.Text = String.Empty;
             txtCorreo.Text = String.Empty;
+
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            conexion.Conectar();
+            conexion.borrarEmpleado(empleadoSeleccionado.getId());
+            conexion.Desconectar();
+
+            MessageBox.Show("SE HA BORRADO EL SOCIO");
         }
     }
 }

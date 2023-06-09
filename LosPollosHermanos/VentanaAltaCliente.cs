@@ -23,7 +23,10 @@ namespace LosPollosHermanos
             String nombre = txtNombre.Text;
             String apellidos = txtApellidos.Text;
 
-            Program.clientes.Add(new Cliente(idCliente, nombre, apellidos));
+            ConexionBaseDatos conexion = new ConexionBaseDatos();
+            conexion.Conectar();
+            conexion.altaCliente(idCliente, nombre, apellidos);
+            conexion.Desconectar();
         }
 
         private void button6_Click(object sender, EventArgs e)
