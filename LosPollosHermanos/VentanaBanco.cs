@@ -15,6 +15,7 @@ namespace LosPollosHermanos
         public VentanaBanco()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void load(object sender, EventArgs e)

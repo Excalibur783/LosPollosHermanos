@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
@@ -38,9 +39,11 @@
             this.btnAlta = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,7 +73,7 @@
             this.txtIdEmpleado.Location = new System.Drawing.Point(219, 84);
             this.txtIdEmpleado.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
-            this.txtIdEmpleado.Size = new System.Drawing.Size(238, 32);
+            this.txtIdEmpleado.Size = new System.Drawing.Size(246, 32);
             this.txtIdEmpleado.TabIndex = 16;
             // 
             // label4
@@ -158,15 +161,6 @@
             this.lblTelefono.TabIndex = 22;
             this.lblTelefono.Text = "TELÉFONO";
             // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(219, 238);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(246, 32);
-            this.txtTelefono.TabIndex = 23;
-            // 
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
@@ -188,15 +182,29 @@
             this.txtCorreo.Size = new System.Drawing.Size(246, 32);
             this.txtCorreo.TabIndex = 25;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(219, 238);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(246, 32);
+            this.txtTelefono.TabIndex = 26;
+            // 
             // VentanaAltaEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(237)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(602, 456);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.lblCorreo);
-            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.btnAlta);
@@ -210,7 +218,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VentanaAltaEmpleado";
-            this.Text = "Form3";
+            this.Text = "Alta empleado";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,8 +237,9 @@
         private System.Windows.Forms.Button btnAlta;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TextBox txtTelefono;
     }
 }

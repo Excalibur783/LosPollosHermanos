@@ -113,7 +113,7 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
             this.button6.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Honeydew;
-            this.button6.Location = new System.Drawing.Point(454, 511);
+            this.button6.Location = new System.Drawing.Point(454, 476);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(129, 41);
@@ -153,7 +153,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(237)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(594, 563);
+            this.ClientSize = new System.Drawing.Size(594, 528);
             this.Controls.Add(this.btnActualizarEmpleado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
@@ -165,7 +165,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VentanaMenu";
-            this.Text = "Form2";
+            this.Text = "Menú principal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

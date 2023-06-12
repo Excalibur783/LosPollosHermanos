@@ -224,7 +224,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitulo);
             this.Name = "VentanaActualizarEmpleado";
-            this.Text = "VentanaActualizarEmpleado";
+            this.Text = "Actualizar empleado";
             this.ResumeLayout(false);
             this.PerformLayout();
 

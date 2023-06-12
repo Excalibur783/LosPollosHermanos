@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaAltaCliente));
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -37,117 +39,105 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
             // 
+            resources.ApplyResources(this.button6, "button6");
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
-            this.button6.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorProvider1.SetError(this.button6, resources.GetString("button6.Error"));
             this.button6.ForeColor = System.Drawing.Color.Honeydew;
-            this.button6.Location = new System.Drawing.Point(428, 325);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.errorProvider1.SetIconAlignment(this.button6, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("button6.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.button6, ((int)(resources.GetObject("button6.IconPadding"))));
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 37);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "ATRÁS";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button1
             // 
+            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
-            this.button1.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorProvider1.SetError(this.button1, resources.GetString("button1.Error"));
             this.button1.ForeColor = System.Drawing.Color.Honeydew;
-            this.button1.Location = new System.Drawing.Point(172, 292);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.errorProvider1.SetIconAlignment(this.button1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("button1.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.button1, ((int)(resources.GetObject("button1.IconPadding"))));
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 37);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "DAR DE ALTA";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtNombre
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(206, 166);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.txtNombre, "txtNombre");
+            this.errorProvider1.SetError(this.txtNombre, resources.GetString("txtNombre.Error"));
+            this.errorProvider1.SetIconAlignment(this.txtNombre, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtNombre.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.txtNombre, ((int)(resources.GetObject("txtNombre.IconPadding"))));
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(145, 32);
-            this.txtNombre.TabIndex = 26;
             // 
             // txtIdCliente
             // 
-            this.txtIdCliente.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCliente.Location = new System.Drawing.Point(206, 116);
-            this.txtIdCliente.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.txtIdCliente, "txtIdCliente");
+            this.errorProvider1.SetError(this.txtIdCliente, resources.GetString("txtIdCliente.Error"));
+            this.errorProvider1.SetIconAlignment(this.txtIdCliente, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtIdCliente.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.txtIdCliente, ((int)(resources.GetObject("txtIdCliente.IconPadding"))));
             this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(145, 32);
-            this.txtIdCliente.TabIndex = 25;
             // 
             // lblNombre
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblNombre, "lblNombre");
+            this.errorProvider1.SetError(this.lblNombre, resources.GetString("lblNombre.Error"));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
-            this.lblNombre.Location = new System.Drawing.Point(100, 166);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.errorProvider1.SetIconAlignment(this.lblNombre, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblNombre.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.lblNombre, ((int)(resources.GetObject("lblNombre.IconPadding"))));
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(104, 33);
-            this.lblNombre.TabIndex = 24;
-            this.lblNombre.Text = "NOMBRE";
             // 
             // lblCliente
             // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblCliente, "lblCliente");
+            this.errorProvider1.SetError(this.lblCliente, resources.GetString("lblCliente.Error"));
             this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
-            this.lblCliente.Location = new System.Drawing.Point(76, 114);
-            this.lblCliente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.errorProvider1.SetIconAlignment(this.lblCliente, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblCliente.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.lblCliente, ((int)(resources.GetObject("lblCliente.IconPadding"))));
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(129, 33);
-            this.lblCliente.TabIndex = 23;
-            this.lblCliente.Text = "ID CLIENTE";
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe Print", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblTitulo, "lblTitulo");
+            this.errorProvider1.SetError(this.lblTitulo, resources.GetString("lblTitulo.Error"));
             this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
-            this.lblTitulo.Location = new System.Drawing.Point(177, 25);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.errorProvider1.SetIconAlignment(this.lblTitulo, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblTitulo.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.lblTitulo, ((int)(resources.GetObject("lblTitulo.IconPadding"))));
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(229, 47);
-            this.lblTitulo.TabIndex = 22;
-            this.lblTitulo.Text = "ALTA CLIENTE";
             // 
             // lblApellidos
             // 
-            this.lblApellidos.AutoSize = true;
-            this.lblApellidos.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblApellidos, "lblApellidos");
+            this.errorProvider1.SetError(this.lblApellidos, resources.GetString("lblApellidos.Error"));
             this.lblApellidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(38)))), ((int)(((byte)(22)))));
-            this.lblApellidos.Location = new System.Drawing.Point(76, 215);
-            this.lblApellidos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.errorProvider1.SetIconAlignment(this.lblApellidos, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lblApellidos.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.lblApellidos, ((int)(resources.GetObject("lblApellidos.IconPadding"))));
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(128, 33);
-            this.lblApellidos.TabIndex = 31;
-            this.lblApellidos.Text = "APELLIDOS";
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(208, 215);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(2);
+            resources.ApplyResources(this.txtApellidos, "txtApellidos");
+            this.errorProvider1.SetError(this.txtApellidos, resources.GetString("txtApellidos.Error"));
+            this.errorProvider1.SetIconAlignment(this.txtApellidos, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("txtApellidos.IconAlignment"))));
+            this.errorProvider1.SetIconPadding(this.txtApellidos, ((int)(resources.GetObject("txtApellidos.IconPadding"))));
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(145, 32);
-            this.txtApellidos.TabIndex = 32;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
+            resources.ApplyResources(this.errorProvider1, "errorProvider1");
             // 
             // VentanaAltaCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(237)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(569, 373);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.button6);
@@ -158,9 +148,8 @@
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VentanaAltaCliente";
-            this.Text = "Form4";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +166,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

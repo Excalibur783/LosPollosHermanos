@@ -15,6 +15,7 @@ namespace LosPollosHermanos
         public VentanaRealizarVenta()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void btnVender_Click(object sender, EventArgs e)

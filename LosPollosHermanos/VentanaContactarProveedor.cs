@@ -15,6 +15,7 @@ namespace LosPollosHermanos
         public VentanaContactarProveedor()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -152,6 +152,9 @@
     <EmbeddedResource Include="VentanaActualizarEmpleado.resx">
       <DependentUpon>VentanaActualizarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VentanaAltaCliente.aa.resx">
+      <DependentUpon>VentanaAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaBanco.resx">
       <DependentUpon>VentanaBanco.cs</DependentUpon>
     </EmbeddedResource>

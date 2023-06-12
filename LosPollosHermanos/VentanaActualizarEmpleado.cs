@@ -18,6 +18,7 @@ namespace LosPollosHermanos
         {
             InitializeComponent();
             actualizarListaEmpleados();
+            ControlBox = false;
         }
 
         private void actualizarListaEmpleados()
